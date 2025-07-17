@@ -1,6 +1,6 @@
 # Dynamic Data Visualization Dashboard
 
-Screenshot.jpeg
+![Dashboard Screenshot](https://github.com/orlandogautier/dynamic-data-dashboard/blob/d7f50f78dff7549609625763bcc66f1b4c47d011/Screenshot.png)
 
 *Reemplaza el texto de arriba con una captura de pantalla (screenshot) atractiva de tu dashboard funcionando. Puedes subir la imagen a un servicio como Imgur o directamente a tu repositorio de GitHub y luego enlazarla aquí. Esto es lo primero que verá la gente.*
 
