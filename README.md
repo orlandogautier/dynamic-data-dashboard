@@ -1,6 +1,6 @@
 # Dynamic Data Visualization Dashboard
 
-!Screenshot
+Screenshot.jpeg
 
 *Reemplaza el texto de arriba con una captura de pantalla (screenshot) atractiva de tu dashboard funcionando. Puedes subir la imagen a un servicio como Imgur o directamente a tu repositorio de GitHub y luego enlazarla aquí. Esto es lo primero que verá la gente.*
 
