@@ -2,8 +2,6 @@
 
 ![Dashboard Screenshot](https://github.com/orlandogautier/dynamic-data-dashboard/blob/d7f50f78dff7549609625763bcc66f1b4c47d011/Screenshot.png)
 
-*Reemplaza el texto de arriba con una captura de pantalla (screenshot) atractiva de tu dashboard funcionando. Puedes subir la imagen a un servicio como Imgur o directamente a tu repositorio de GitHub y luego enlazarla aquí. Esto es lo primero que verá la gente.*
-
 ## Descripción del Proyecto
 
 Este es un dashboard web de visualización de datos de pila completa (full-stack) diseñado para mostrar datos de ventas en tiempo real de una base de datos MySQL de una manera interactiva y fácil de entender. El objetivo principal es proporcionar una herramienta robusta para el monitoreo y análisis de las tendencias de ventas, facilitando la toma de decisiones informadas.
