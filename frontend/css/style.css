@@ -1,0 +1,125 @@
+/* frontend/css/style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea */
+    gap: 25px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    padding: 25px;
+    max-width: 1200px; /* Ancho máximo del contenedor principal del dashboard */
+    margin: 20px auto; /* Centra el dashboard en la página */
+}
+
+.chart-card, .data-table-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1; /* Permite que las tarjetas crezcan y se encojan dentro del contenedor flex */
+    min-width: 450px; /* Asegura un ancho mínimo para que el contenido no se comprima demasiado */
+    max-width: 550px; /* **¡Importante!** Limita el ancho máximo de las tarjetas */
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho/alto total */
+}
+
+/* --- ESTILOS CLAVE PARA EL CONTENEDOR DEL CANVAS --- */
+.chart-canvas-wrapper {
+    position: relative; /* Importante para que Chart.js maneje la responsividad correctamente */
+    height: 400px;      /* **¡CLAVE!** Define una altura fija para el contenedor del canvas */
+    width: 100%;        /* El canvas ocupará el 100% del ancho de este contenedor */
+    max-width: 500px; /* Opcional: Un límite adicional si la tarjeta es muy ancha */
+    margin: auto;       /* Centra el canvas dentro de su tarjeta si no ocupa el 100% */
+}
+
+/* Estos estilos suelen ser manejados por Chart.js directamente, pero no estorban */
+canvas {
+    display: block; /* Elimina espacio extra debajo del canvas */
+    /* width: 100% !important; */ /* Chart.js lo maneja internamente con responsive:true */
+    /* height: 100% !important; */ /* Chart.js lo maneja internamente con responsive:true */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95em; /* Un poco más grande que 0.9em para mejor legibilidad */
+}
+
+th, td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e9eff6;
+    font-weight: bold;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: default; /* Cambia el cursor para indicar que no es clickable */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* --- Media Queries para Responsividad (Opcional, pero recomendado) --- */
+@media (max-width: 900px) {
+    .chart-card, .data-table-card {
+        min-width: 90%; /* En pantallas más pequeñas, ocupa casi todo el ancho */
+        max-width: 90%;
+    }
+
+    .dashboard-container {
+        flex-direction: column; /* Apila las tarjetas verticalmente en pantallas pequeñas */
+        align-items: center; /* Centra las tarjetas apiladas */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .chart-canvas-wrapper {
+        height: 300px; /* Ajusta la altura del gráfico para móviles más pequeños */
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+}

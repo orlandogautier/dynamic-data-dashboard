@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Ventas Dinamico</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Dashboard de Ventas de Productos</h1>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="chart-card">
+      <h2>Ventas por Productos</h2>
+      <!-- ¡CORRECCIÓN AQUÍ! Añadimos un contenedor para el canvas -->
+      <div class="chart-canvas-wrapper">
+        <canvas id="salesChart"></canvas>
+      </div>
+    </section>
+
+    <section class="data-table-card"> <!-- Añadí la clase para que también tenga estilos de tarjeta -->
+      <h2>Datos Crudos de Ventas</h2>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>ID</th> 
+            <th>Producto</th>
+            <th>Monto</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>    
+  </main>
+  <footer>
+    <p>&copy; 2025 Orlando Gautier - Dynamic Data Dashboard</p>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>  
+</html>
