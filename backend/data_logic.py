@@ -5,8 +5,8 @@ import os
 # --- Configuración de MySQL (preferiblemente desde las variables de entorno) ---
 DB_CONFIG = {
     'host': os.getenv('DB_HOST', 'localhost'),
-    'user': os.getenv('DB_USER', 'webuser'),
-    'password': os.getenv('DB_PASSWORD', '10824476'),
+    'user': os.getenv('DB_USER', 'user'),
+    'password': os.getenv('DB_PASSWORD', 'password'),
     'db': os.getenv('DB_NAME', 'dashboard_db'),
     'charset': 'utf8mb4',
     'cursorclass': pymysql.cursors.DictCursor # Para obtener resultados como diccionarios
